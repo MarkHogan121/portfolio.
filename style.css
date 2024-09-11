@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #f2fbff;
+}
+.contact-me span{
+    color: #0059be;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 35px 2%;
+    background-color: rgba(22, 22, 22, 0.932);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header .logo{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: #0059be;
+    text-shadow: 0 0 25px #0059be,
+                 0 0 50px #0059be;
+    transform: scale(1.1);
+}
+.blue-color{
+    color: #0059be;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #0059be;
+    border-bottom: 3px solid transparent;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+    color: rgba(22, 22, 22, 0.932);
+}
+.home-content h1{
+    font-size: 52px;
+    color: rgba(22, 22, 22, 0.932);
+}
+.home-content p{
+    font-size: 22px;
+    color: rgba(22, 22, 22, 0.932);
+    margin: 25px 0 30px;
+}
+
+
+.social{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    margin: -10px 0 30px;
+    color: #0059be;
+}
+.social a:visited, .social a:active{
+    color: #0059be;
+}
+.reddit{
+    margin-left: -8px;
+    font-size: 29px;
+    margin-top: -5px;
+}
+.reddit , .discord , .gmail{
+    padding: 0 10px;
+    padding-top: 0;
+    cursor: pointer;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background: rgba(22, 22, 22, 0.932);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: #f2fbf2;
+    color: rgba(22, 22, 22, 0.932);
+    border: 2px solid rgba(22, 22, 22, 0.932);
+}
+.btn-2{
+    padding: 15px 28px;
+    background: #0059be;
+    color: white;
+    border: 2px solid rgba(22, 22, 22, 0.932);
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: #f2fbff;
+    color: #0059be;
+}
+.img-box img{
+    width: 300px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0059be;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(22, 22, 22, 0.932);
+    width: 50px;
+}
+
+.logos, #portfolio , #web-design{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.logos img{
+    width: 450px;
+}
+
+.box-shadow{
+    padding-bottom: -10;
+    margin: 10px 10px;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input, .contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: rgba(22, 22, 22, 0.932);
+    background: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+
+.logofolio, .web-design, .branding{
+    text-align: center;
+}
+.web-design{
+    margin-top: 16px;
+}
+.logofolio-heading h1, .web-design-heading h1, .branding h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: #0059be;
+    cursor: pointer;
+}
+.branding h1{
+    margin-top: 30px;
+}
+.logo-des .row1{
+    margin-top: -110px;
+}
+.logo-des .row2{
+    margin-top: -34px;
+}
+
+.logo-branding .row2{
+    margin-top: -56px;
+}
+.logo-branding .row3{
+    margin-top: -284px;
+}
+
+.web-des .row1{
+    margin-top: -110px;
+}
+
+.row4, .row5{
+    display: none;
+}
+
+
+.web-des{
+    display: flex;
+    flex-wrap: wrap;
+}
+.web-des , .row1 , .row2{
+    flex-wrap: wrap;
+    padding: 2px;
+}
+.web-des .row1{
+    margin-top: -56px;
+}
+.web-des img{
+    width: 600px;
+}
+.web-design-heading h1{
+    margin: 50px 0;
+}
+
+.intro-head{
+    font-size: 20px;
+}
+/* ANIMATION */
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.logo-des .box-shadow ,.logo-branding .box-shadow{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30% ;
+}
+
+.web-des .box-shadow{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 18% ;
+}
+
+/* PATA NHI KONSI SCREEN */
+@media (max-width : 1426px) and (min-width : 960px){
+
+    .logofolio .row1, .logofolio .row2, .logofolio .row3{
+        display: none;
+    }
+    .logofolio .row4 , .logofolio .row5 {
+        display: block;
+    }
+    .logofolio .row4{
+        margin-top: 22px;
+    }
+
+    /* BRANDING */
+        .branding-heading h1{
+            font-size: 80px;
+        }
+        .logo-branding .row4{
+            margin-bottom: -96px;
+        }
+        .logo-branding .row1 ,.logo-branding .row2, .logo-branding .row3{
+            display: none;
+        }
+        .logo-branding .row4 , .row5{
+            display: block;
+        }
+        .logo-branding .row4{
+            margin-top: -280px;
+        }
+        .logo-branding .row4 img,.logo-branding .row5 img{
+            width: 456px;
+        }
+        .contact-me span{
+           color: #0059be;
+        }
+}
+
+/* TABLET SCREEN */
+@media (max-width : 960px) and (min-width : 700px){
+    /* HEADER */
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 35px 2%;
+        background-color: rgba(22, 22, 22, 0.932);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    header .logo{
+        font-size: 32px;
+        color: white;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+    .logo:hover{
+        color: #0059be;
+        text-shadow: 0 0 25px #0059be,
+                     0 0 50px #0059be;
+        transform: scale(1.1);
+    }
+    span{
+        color: #0059be;
+    }
+    .navbar a{
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+        margin: 0 20px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+    }
+    .navbar a:hover,
+    .navbar a.active{
+        color: #0059be;
+        border-bottom: 3px solid transparent;
+    }
+
+    
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 100px 12% 0;
+}
+
+/* WEB DESIGN SEC */
+.web-des{
+    display: flex;
+    flex-wrap: wrap;
+}
+.web-des , .row1 , .row2{
+    flex-wrap: wrap;
+    padding: 2px;
+}
+.web-des .row1{
+    margin-bottom: 44px;
+}
+.web-des img{
+    width: 310px;
+}
+.web-design-heading h1{
+    margin: 50px 0;
+}
+.web-design h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.web-design .row1{
+    margin-top: 16px;
+}
+
+
+/* LOGOFOLIO */
+.logofolio img{
+    width: 320px;
+    padding-right: -10px;
+}
+.logofolio .row5{
+    margin-top: -18px;
+}
+.logofolio h1{
+    font-size: 50px;
+}
+.logofolio .row1 , .logofolio .row2 , .logofolio .row3{
+    display: none;
+}
+.logofolio .row4 , .logofolio-heading .row5{
+    display: block;
+}
+
+/* BRANDING */
+.branding-heading h1{
+    font-size: 50px;
+}
+.logo-branding .row4{
+    margin-bottom: -96px;
+}
+.logo-branding .row1 ,.logo-branding .row2, .logo-branding .row3{
+    display: none;
+}
+.logo-branding .row4 , .row5{
+    display: block;
+}
+.logo-branding .row4{
+    margin-top: -246px;
+}
+.logo-branding .row5{
+    margin-top: -20px;
+}
+.logo-branding .row4 img{
+    width: 320px;
+}
+.logo-branding .row5 img{
+    width: 320px;
+}
+
+/* INTRO */
+.home-content{
+    margin-left: -20%;
+}
+.home-content h3{
+    font-size: 30px;
+}
+.home-content h1{
+    font-size: 50px;
+    line-height: 48px;
+    margin-bottom: 20px;
+
+}
+.home-content p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+}
+
+
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 700px) {
+
+/* HEADER */
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px 1%;
+        background-color: rgba(22, 22, 22, 0.932);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    header .logo{
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+    .logo:hover{
+        color: #0059be;
+        text-shadow: 0 0 25px #0059be,
+                     0 0 50px #0059be;
+        transform: scale(1.1);
+    }
+    .social a:visited, .social a:active , .social .reddit:active , .social .gmail:active , .social .reddit:visited , .social .gmail:visited{
+        color: #0059be;
+    }
+    #changing{        
+         color: rgba(22, 22, 22, 0.932);
+    }
+    span{
+        color: #0059be;
+    }
+    .navbar a{
+        font-size: 8px;
+        color: white;
+        font-weight: 500;
+        margin: 0 8px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+    } 
+    .navbar a:hover,
+    .navbar a.active{
+        color: #0059be;
+        border-bottom: 3px solid transparent;
+    }
+    .social{
+        color: #0059be;
+    }
+
+    
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 100px 10% 0;
+
+}
+
+/* WEB DESIGN SEC */
+.web-des{
+    display: flex;
+    flex-wrap: wrap;
+}
+.web-des , .row1 , .row2{
+    flex-wrap: wrap;
+    padding: 2px;
+}
+.web-des .row1{
+    margin-top: -56px;
+}
+.web-des img{
+    width: 300px;
+}
+.web-design-heading h1{
+    margin: 50px 0;
+}
+.web-design h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.web-design .row1{
+    margin-top: 16px;
+}
+
+
+/* LOGOFOLIO */
+.logofolio img{
+    width: 300px;
+    padding-left: -70px;
+}
+.logofolio .row3{
+    display: none;
+}
+.logofolio .row4 , .logofolio .row5 {
+    display: block;
+}
+.logofolio .row1{
+    margin-top: 0px;
+}
+.logofolio .row2{
+    margin-top: -10px;
+}
+.logofolio h1, .branding-heading h1{
+    font-size: 50px;
+}
+
+/* INTRO */
+.home-content{
+    margin-left: -26%;
+}
+.home-content h3{
+    font-size: 24px;
+}
+.home-content h1{
+    font-size: 30px;
+    line-height: 30px;
+
+}
+.home-content p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.social a{
+    font-size: 18px;
+}
+.social .reddit{
+    font-size: 22px;
+    margin-top: -4px;
+}
+/* BRANDING */
+.logo-branding img{
+    width: 300px;
+}
+.logo-branding .row2{
+    margin-top: 0;
+}
+}
