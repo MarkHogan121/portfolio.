@@ -13,6 +13,9 @@ body{
 .contact-me span{
     color: #0059be;
 }
+.for-mob{
+    display: none;
+}
 header{
     width: 100%;
     position: fixed;
@@ -568,23 +571,23 @@ header .logo{
     width: 300px;
     padding-left: -70px;
 }
-.logofolio .row3{
-    display: none;
+.logofolio h1, .branding-heading h1{
+    font-size: 50px;
 }
 .logofolio .row4 , .logofolio .row5 {
     display: block;
 }
-.logofolio .row1{
-    margin-top: 0px;
-}
-.logofolio .row2{
-    margin-top: -10px;
-}
-.logofolio h1, .branding-heading h1{
-    font-size: 50px;
+.logo-des .row1,.logo-des .row2,.logo-des .row3{
+    display: none;
 }
 
 /* INTRO */
+.home-content p{
+    display: none;
+}
+.home-content .for-mob{
+    display: block;
+}
 .home-content{
     margin-left: -26%;
 }
