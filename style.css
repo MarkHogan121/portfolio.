@@ -173,7 +173,9 @@ header .logo{
     padding-bottom: -10;
     margin: 10px 10px;
 }
-
+.logo-branding .mob-web-row{
+    display: none;
+}
 .contact-form h2{
     text-align: center;
     margin-top: 3em;
@@ -219,11 +221,11 @@ header .logo{
 .branding h1{
     margin-top: 30px;
 }
-.logo-des .row2{
-    margin-top: -78px;
+.logo-des .row1{
+    margin-top: -307px;
 }
-.logo-des .row3{
-    margin-top: -36px;
+.logo-des .row2{
+    margin-top: -41px;
 }
 
 .logo-branding .row2{
@@ -295,9 +297,6 @@ header .logo{
     }
     .logofolio .row4 , .logofolio .row5 {
         display: block;
-    }
-    .logofolio .row4{
-        margin-top: -122px;
     }
 
     /* BRANDING */
@@ -410,9 +409,6 @@ header .logo{
 .logofolio img{
     width: 320px;
     padding-right: -10px;
-}
-.logofolio .row4{
-    margin-top: -88px;
 }
 .logofolio h1{
     font-size: 50px;
@@ -583,8 +579,8 @@ header .logo{
 .logo-des .row1,.logo-des .row2,.logo-des .row3{
     display: none;
 }
-.logo-des .row4{
-    margin-top: -82px;
+#logofolio{
+    margin-top: -70px;
 }
 .logo-des .row5{
     margin-top: 0px;
@@ -626,5 +622,11 @@ header .logo{
 }
 .logo-branding .row2{
     margin-top: 0;
+}
+.logo-branding .row1,.logo-branding .row2,.logo-branding .row3,.logo-branding .row4,.logo-branding .row5{
+    display: none;
+}
+.logo-branding .mob-web-row{
+    display: block;
 }
 }
